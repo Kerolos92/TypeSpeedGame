@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Speed Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:wght@300,400&display=swap">
+</head>
+<body>
+
+    <div class="game">
+        <div class="name">Type Speed Test Game</div>
+        <div class="container">
+            <div class="row info">
+                <div class="col-md-12 divName">
+                   <label for="name"> Type Your Name : </label>
+                   <input id="name" type="text">
+                </div>
+                <button id="Easy" class="start">Easy</button>
+                <button id="Normal" class="start">Normal</button>
+                <button id="Hard" class="start">Hard</button>
+            </div>
+            <div class="message">
+                You Are Playing On 
+                <span class="lvl">
+                </span> Level & You Have 
+                <span class="seconds"></span> Seconds To Type The Word
+            </div>
+            <!-- <div class="start">Start Playing</div> -->
+            <div class="the-word"></div>
+            <input type="text" class="input" />
+            <div class="upcoming-words">words Will Show Here</div>
+            <div class="control">
+                <div class="time">Time Left: <span></span> Seconds</div>
+                <div class="score">Score: <span class="got">0</span> From <span class="total"></span></div>
+            </div>
+            <div class="finish"></div>
+        </div>
+
+    </div>
+    <!-- <table class="table text-center">
+        <thead>
+            <th>Name</th>
+            <th>Level</th>
+            <th>Score {3}</th>
+            <th>Date</th>
+        </thead>
+        <tbody id="tableData">
+            <tr>
+                <td>kerolos</td>
+                <td>Normal</td>
+                <td>3</td>
+                <td>22-2-2022</td>
+            </tr> 
+        </tbody>
+    </table> -->
+
+    <script src="main.js"></script>
+</body>
+</html>
